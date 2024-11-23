@@ -1,7 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amplifier Records</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <img src="res/logo.png" alt="Amplifier Records Logo">
+    </div>
+    <nav class="nav">
+      <a href="#musica">Música</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="social-icons">
+      <a href="#" target="_blank"><img src="res/Icons/icon-facebook.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="res/Icons/icon-instagram.png" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="res/Icons/X_logo.jpg" alt="X"></a>
+    </div>
+  </header>
+
+  <!-- Últimos lanzamientos -->
+  <section class="lanzamientos">
+    <h1>Últimos lanzamientos</h1>
+    <div class="carousel">
+      <button class="carousel-btn prev">❮</button>
+      <div class="carousel-track">
+        <img src="res/Covers/Cover1.png" alt="Cover 1">
+        <img src="res/Covers/Cover2.png" alt="Cover 2">
+        <img src="res/Covers/Cover3.png" alt="Cover 3">
+        <img src="res/Covers/Cover4.png" alt="Cover 4">
+      </div>
+      <button class="carousel-btn next">❯</button>
+    </div>
+  </section>
+
+  <!-- Botón para alternar modo -->
+  <button id="mode-toggle">
+    <img src="res/Icons/icon-toggle.png" alt="Modo Claro/Oscuro">
+  </button>
+
+  <script src="script.js"></script>
 </body>
 </html>

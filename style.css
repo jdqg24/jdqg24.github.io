@@ -1,0 +1,164 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos comunes */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 1s ease; /* Transición suave entre modos */
+}
+
+/* Modo oscuro (por defecto) */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.dark-mode {
+  background-color: #1c1c1c;
+}
+
+.nav a.dark-mode {
+  color: #ffffff;
+}
+
+.nav a.dark-mode:hover {
+  color: #f39c12;
+}
+
+.social-icons a img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+.lanzamientos.dark-mode h1 {
+  color: #ffffff;
+}
+
+/* Modo claro */
+body.light-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+header.light-mode {
+  background-color: #f4f4f4;
+}
+
+.nav a.light-mode {
+  color: #121212;
+}
+
+.nav a.light-mode:hover {
+  color: #f39c12;
+}
+
+.lanzamientos.light-mode h1 {
+  color: #121212;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1c1c1c;
+  transition: background-color 0.3s ease, color 0.6s ease; /* Transición suave entre modos */
+}
+
+.logo img {
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #f39c12;
+}
+
+/* Últimos lanzamientos */
+.lanzamientos {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.lanzamientos h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-track img {
+  width: 400px;
+  margin: 0 10px;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+/* Botón para alternar modo */
+#mode-toggle {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#mode-toggle img {
+  width: 30px;
+  height: 30px;
+}
+
+#mode-toggle:hover {
+  background-color: #e67e22;
+}
