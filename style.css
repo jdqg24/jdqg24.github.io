@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: ARFont;
+  src: url('res/Fonts/Neonsign\ Regular.ttf') format('truetype');
+}
+
 /* Estilos comunes */
 body {
   font-family: Arial, sans-serif;
@@ -75,10 +80,12 @@ header.light-mode {
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  user-select: none;
 }
 
 .logo img {
   width: 200px;
+  -webkit-user-drag: none;
 }
 
 .nav {
@@ -109,20 +116,20 @@ header.light-mode {
 /* Estilos para la galería de covers */
 .lanzamientos {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .cover-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
   padding: 10px;
 }
 
 .cover {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -133,29 +140,54 @@ header.light-mode {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Media Queries para hacer el diseño responsivo */
+.lanzamientos h1 {
+  font-family: ARFont;
+  font-size: 5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries para hacer el diseño responsive */
 @media (max-width: 1200px) {
   .cover {
-    max-width: 180px;
+    max-width: 300px;
+  }
+
+  .lanzamientos h1 {
+    font-size: 4rem;
+  }
+
+  .logo img {
+    width: 170px;
   }
 }
 
 @media (max-width: 768px) {
   .cover {
-    max-width: 150px;
+    max-width: 250px;
+  }
+
+  .lanzamientos h1 {
+    font-size: 3rem;
+  }
+
+  .logo img {
+    width: 160px;
   }
 }
 
 @media (max-width: 480px) {
   .cover {
-    max-width: 120px;
+    max-width: 150px;
   }
-}
 
-.lanzamientos h1 {
-  font-size: 2rem;
-  margin-top: 70px;
-  margin-bottom: 10px;
+  .lanzamientos h1 {
+    font-size: 2rem;
+  }
+
+  .logo img {
+    width: 150px;
+  }
 }
 
 /* Botón para alternar modo */
@@ -207,19 +239,5 @@ header.light-mode {
 
   .social-icons {
     display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    color: #ffffff;
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-
-  .menu-toggle:hover {
-    color: #f39c12;
   }
 }

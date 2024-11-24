@@ -5,6 +5,8 @@ const header = document.querySelector('.header');
 const navLinks = document.querySelectorAll('.nav a');
 const lanzamientos = document.querySelector('.lanzamientos');
 const arvLogo = document.getElementById('arv-logo');
+const fbLogo = document.getElementById('fb-logo');
+const igLogo = document.getElementById('ig-logo');
 
 // Establecemos el modo por defecto según el valor del localStorage (si está disponible)
 if (localStorage.getItem('theme') === 'dark') {
@@ -17,6 +19,8 @@ if (localStorage.getItem('theme') === 'dark') {
   lanzamientos.classList.add('dark-mode');
   lanzamientos.classList.remove('light-mode');
   arvLogo.src = 'res/Icons/arv-logo-dark.svg';
+  fbLogo.src = 'res/Icons/facebook-dark.svg';
+  igLogo.src = 'res/Icons/instagram-dark.svg';
 } else {
   body.classList.add('light-mode');
   body.classList.remove('dark-mode');
@@ -27,6 +31,8 @@ if (localStorage.getItem('theme') === 'dark') {
   lanzamientos.classList.add('light-mode');
   lanzamientos.classList.remove('dark-mode');
   arvLogo.src = 'res/Icons/arv-logo-light.svg';
+  fbLogo.src = 'res/Icons/facebook-light.svg';
+  igLogo.src = 'res/Icons/instagram-light.svg';
 }
 
 modeToggleButton.addEventListener('click', () => {
@@ -45,8 +51,12 @@ modeToggleButton.addEventListener('click', () => {
   if (body.classList.contains('dark-mode')) {
     localStorage.setItem('theme', 'dark');
     arvLogo.src = 'res/Icons/arv-logo-dark.svg';
+    fbLogo.src = 'res/Icons/facebook-dark.svg';
+    igLogo.src = 'res/Icons/instagram-dark.svg';
   } else {
     localStorage.setItem('theme', 'light');
     arvLogo.src = 'res/Icons/arv-logo-light.svg';
+    fbLogo.src = 'res/Icons/facebook-light.svg';
+    igLogo.src = 'res/Icons/instagram-light.svg';
   }
 });
