@@ -7,14 +7,28 @@
 
 @font-face {
   font-family: ARFont;
-  src: url('../res/Fonts/Neonsign\ Regular.ttf') format('truetype');
+  src: url('../res/Fonts/WatcherPersonalUseBold-BWexB.ttf') format('truetype');
 }
 
 /* Estilos comunes */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  transition: background-color 0.3s ease, color 1s ease;
+  transition: background-color 0.6s ease;
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1.6;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 /* Modo oscuro (por defecto) */
@@ -34,6 +48,11 @@ header.dark-mode {
 .nav a.dark-mode:hover {
   color: #f39c12;
 }
+
+.cover.dark-mode {
+  border: #ffffff solid 4px;
+}
+
 
 .social-icons a img {
   width: 24px;
@@ -66,6 +85,10 @@ header.light-mode {
   color: #121212;
 }
 
+.cover.light-mode {
+  border: #cfcfcf solid 4px;
+}
+
 /* Header */
 .header {
   display: flex;
@@ -73,7 +96,7 @@ header.light-mode {
   align-items: center;
   padding: 10px 20px;
   background-color: #1c1c1c;
-  transition: background-color 0.3s ease, color 0.6s ease;
+  transition: background-color 0.6s ease;
 }
 
 .logo {
@@ -100,6 +123,7 @@ header.light-mode {
   color: #ffffff;
   text-decoration: none;
   font-weight: normal;
+  transition: color 0.6s ease;
 }
 
 .nav a:hover {
@@ -111,6 +135,7 @@ header.light-mode {
   display: flex;
   justify-content: flex-end;
   gap: 1rem;
+  transition: color 0.6s ease;
 }
 
 /* Estilos para la galería de covers */
@@ -123,7 +148,7 @@ header.light-mode {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 10px;
   padding: 10px;
 }
 
@@ -144,22 +169,29 @@ header.light-mode {
 
 .lanzamientos h1 {
   font-family: ARFont;
-  font-size: 5rem;
+  font-weight: lighter;
+  font-size: 6rem;
   margin-top: 20px;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .acerca-de p{
+  font-size: 1.3rem;
+  text-align: center;
   padding-left: 50px;
   padding-right: 50px;
+  transition: color 0.3s ease;
 }
 
 .acerca-de h1 {
-  text-align: center;
   font-family: ARFont;
-  font-size: 5rem;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 6rem;
   margin-top: 20px;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 /* Media Queries para hacer el diseño responsive */
@@ -169,11 +201,11 @@ header.light-mode {
   }
 
   .lanzamientos h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .acerca-de h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .logo img {
@@ -187,11 +219,11 @@ header.light-mode {
   }
 
   .lanzamientos h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .acerca-de h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .logo img {
@@ -205,11 +237,11 @@ header.light-mode {
   }
 
   .lanzamientos h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .acerca-de h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .logo img {
@@ -260,15 +292,11 @@ header.light-mode {
     gap: 1rem;
   }
 
-  .nav.active {
-    display: flex;
-  }
-
   .social-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   
 }
