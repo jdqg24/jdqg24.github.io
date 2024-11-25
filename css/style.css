@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: ARFont;
-  src: url('res/Fonts/Neonsign\ Regular.ttf') format('truetype');
+  src: url('../res/Fonts/Neonsign\ Regular.ttf') format('truetype');
 }
 
 /* Estilos comunes */
