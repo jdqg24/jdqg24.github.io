@@ -99,7 +99,7 @@ header.light-mode {
 .nav a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 .nav a:hover {
@@ -133,6 +133,8 @@ header.light-mode {
   height: auto;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  -webkit-user-drag: none;
 }
 
 .cover:hover {
@@ -143,7 +145,20 @@ header.light-mode {
 .lanzamientos h1 {
   font-family: ARFont;
   font-size: 5rem;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.acerca-de p{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.acerca-de h1 {
+  text-align: center;
+  font-family: ARFont;
+  font-size: 5rem;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
@@ -154,6 +169,10 @@ header.light-mode {
   }
 
   .lanzamientos h1 {
+    font-size: 4rem;
+  }
+
+  .acerca-de h1 {
     font-size: 4rem;
   }
 
@@ -171,6 +190,10 @@ header.light-mode {
     font-size: 3rem;
   }
 
+  .acerca-de h1 {
+    font-size: 3rem;
+  }
+
   .logo img {
     width: 160px;
   }
@@ -178,10 +201,14 @@ header.light-mode {
 
 @media (max-width: 480px) {
   .cover {
-    max-width: 150px;
+    max-width: 160px;
   }
 
   .lanzamientos h1 {
+    font-size: 2rem;
+  }
+
+  .acerca-de h1 {
     font-size: 2rem;
   }
 
@@ -226,10 +253,10 @@ header.light-mode {
   }
 
   .nav {
-    display: none;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 15px;
     gap: 1rem;
   }
 
@@ -238,6 +265,10 @@ header.light-mode {
   }
 
   .social-icons {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
   }
+  
 }
