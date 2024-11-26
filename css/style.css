@@ -31,6 +31,19 @@ body {
     "YTUC" 712;
 }
 
+#artist-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 30px;
+  margin: 1.2rem;
+  border-radius: 20px;
+}
+
+#artist-card img {
+  border-radius: 50%;
+}
+
 /* Modo oscuro (por defecto) */
 body.dark-mode {
   background-color: #121212;
@@ -47,10 +60,6 @@ header.dark-mode {
 
 .nav a.dark-mode:hover {
   color: #f39c12;
-}
-
-.cover.dark-mode {
-  border: #ffffff solid 4px;
 }
 
 
@@ -83,10 +92,6 @@ header.light-mode {
 
 .lanzamientos.light-mode h1 {
   color: #121212;
-}
-
-.cover.light-mode {
-  border: #cfcfcf solid 4px;
 }
 
 /* Header */
