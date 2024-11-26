@@ -31,17 +31,40 @@ body {
     "YTUC" 712;
 }
 
-#artist-card {
-  display: flex;
-  align-items: center;
+.boton-escuchar {
+  background-color: #ac12f3;
+  color: white;
+  border: none;
   padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-escuchar:hover {
+  background-color: #8c0bbd;
+}
+
+#artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin: 1.2rem;
-  border-radius: 20px;
+  padding: 10px;
+}
+
+#artist-card {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 25px;
 }
 
 #artist-card img {
   border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
 }
 
 /* Modo oscuro (por defecto) */
@@ -216,6 +239,10 @@ header.light-mode {
   .logo img {
     width: 170px;
   }
+
+  #artists {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -234,6 +261,10 @@ header.light-mode {
   .logo img {
     width: 160px;
   }
+
+  #artists {
+    gap: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -251,6 +282,10 @@ header.light-mode {
 
   .logo img {
     width: 150px;
+  }
+
+  #artists {
+    gap: 10px;
   }
 }
 
