@@ -32,7 +32,7 @@ body {
 }
 
 .boton-escuchar {
-  background-color: #ac12f3;
+  background-color: #884FFC;
   color: white;
   border: none;
   padding: 10px;
@@ -42,7 +42,7 @@ body {
 }
 
 .boton-escuchar:hover {
-  background-color: #8c0bbd;
+  background-color: #6A3DBD;
 }
 
 #artists {
