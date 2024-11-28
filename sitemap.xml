@@ -7,22 +7,27 @@
 
 <url>
   <loc>https://arvenezuela.com/</loc>
-  <lastmod>2024-11-27T15:14:10+00:00</lastmod>
+  <lastmod>2024-11-28T15:27:25+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://arvenezuela.com/index.html</loc>
-  <lastmod>2024-11-27T15:14:10+00:00</lastmod>
+  <lastmod>2024-11-28T15:27:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://arvenezuela.com/musica.html</loc>
-  <lastmod>2024-11-27T15:14:10+00:00</lastmod>
+  <lastmod>2024-11-28T15:27:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://arvenezuela.com/artistas.html</loc>
-  <lastmod>2024-11-27T15:14:10+00:00</lastmod>
+  <lastmod>2024-11-28T15:27:25+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://arvenezuela.com/servicios.html</loc>
+  <lastmod>2024-11-28T15:27:25+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
