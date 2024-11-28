@@ -31,6 +31,10 @@ body {
     "YTUC" 712;
 }
 
+.info-adicional {
+  color: #4b4b4b;
+}
+
 .boton-escuchar {
   background-color: #884FFC;
   color: white;
@@ -67,10 +71,20 @@ body {
   height: 10rem;
 }
 
+h2 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: lighter;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
 /* Modo oscuro (por defecto) */
 body.dark-mode {
   background-color: #121212;
-  color: #ffffff;
+  color: #ebebeb;
 }
 
 header.dark-mode {
@@ -98,7 +112,7 @@ header.dark-mode {
 /* Modo claro */
 body.light-mode {
   background-color: #ffffff;
-  color: #121212;
+  color: #141414;
 }
 
 header.light-mode {
@@ -222,6 +236,33 @@ header.light-mode {
   transition: color 0.3s ease;
 }
 
+.servicios {
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.servicios h1 {
+  font-family: ARFont;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+  color: #6A3DBD;
+}
+
+#servicio {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+}
+
 /* Media Queries para hacer el diseño responsive */
 @media (max-width: 1200px) {
   .cover {
@@ -243,6 +284,8 @@ header.light-mode {
   #artists {
     gap: 10px;
   }
+
+
 }
 
 @media (max-width: 768px) {
