@@ -31,56 +31,18 @@ body {
     "YTUC" 712;
 }
 
-/* Modal background */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+.background {
+  background: url('../res/Backgrounds/studio-background.jpg');
+  background-size: cover;
 }
 
-/* Modal content */
-.modal {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 90%;
-  text-align: center;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #1c1c1c;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: lighter;
+.bg-blur {
+  backdrop-filter: blur(30px);
+  background-color: #00000094;
 }
 
 .info-adicional {
   color: #4b4b4b;
-}
-
-.boton-escuchar {
-  background-color: #884FFC;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.boton-escuchar:hover {
-  background-color: #6A3DBD;
 }
 
 #artists {
@@ -122,20 +84,19 @@ h3 {
 }
 
 /* Modo oscuro (por defecto) */
-body.dark-mode {
-  background-color: #121212;
-  color: #ebebeb;
+body {
+  color: #eeeeee;
 }
 
-header.dark-mode {
-  background-color: #1c1c1c;
+header {
+  background-color: #1c1c1c4f;
 }
 
-.nav a.dark-mode {
+.nav a {
   color: #ffffff;
 }
 
-.nav a.dark-mode:hover {
+.nav a:hover {
   color: #f39c12;
 }
 
@@ -145,36 +106,12 @@ header.dark-mode {
   margin-left: 10px;
 }
 
-/* Modo claro */
-body.light-mode {
-  background-color: #ececec;
-  color: #141414;
-}
-
-header.light-mode {
-  background-color: #f4f4f4;
-}
-
-.nav a.light-mode {
-  color: #121212;
-}
-
-.nav a.light-mode:hover {
-  color: #f39c12;
-}
-
-.lanzamientos.light-mode h1 {
-  color: #121212;
-}
-
 /* Header */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1c1c1c;
-  transition: background-color 0.6s ease;
 }
 
 .logo {
@@ -327,7 +264,7 @@ header.light-mode {
 
 @media (max-width: 768px) {
   .cover {
-    max-width: 250px;
+    max-width: 220px;
   }
 
   .lanzamientos h1 {
