@@ -204,11 +204,6 @@ header {
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-  text-shadow: 
-  -1px -1px 0 #000, 
-   1px -1px 0 #000, 
-  -1px  1px 0 #000, 
-   1px  1px 0 #000;
 }
 
 .acerca-de h1 {
@@ -242,11 +237,6 @@ header {
   margin-bottom: 10px;
   transition: color 0.3s ease;
   color: #6A3DBD;
-  text-shadow: 
-  -2px -2px 0 #000, 
-   2px -2px 0 #000, 
-  -2px  2px 0 #000, 
-   2px  2px 0 #000;
 }
 
 #servicio {
