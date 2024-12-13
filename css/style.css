@@ -277,6 +277,7 @@ header {
 
 .redes-artista a img {
   width: 60px;
+  margin-top: 3px;
   transition: transform 0.3s ease;  
 }
 
