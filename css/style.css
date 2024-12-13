@@ -99,6 +99,40 @@ header {
   background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5284488795518207) 35%, rgba(0,0,0,1) 80%);
 }
 
+.modal {
+  color: rgb(0, 0, 0);
+  justify-content: center;
+  width: 80%;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+.modal img {
+  width: 5rem;
+  height: auto;
+  border-radius: 10px;
+}
+
+.demo-cover {
+  width: 5rem;
+  height: auto;
+}
+
+.demo-info {
+  width: 50%;
+}
+
+.demo-player audio{
+  width: 100%;
+  justify-content: center;
+}
+
 .nav a {
   color: #ffffff;
 }
@@ -106,7 +140,6 @@ header {
 .nav a:hover {
   color: #6b4e91;
 }
-
 
 .social-icons a img {
   width: 24px;
