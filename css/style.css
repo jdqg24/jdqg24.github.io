@@ -67,7 +67,7 @@ body::before {
   gap: 25px;
 }
 
-#artist-card img {
+.img-artista {
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
@@ -262,6 +262,26 @@ header {
   max-width: 30%;
   height: auto;
   border-radius: 5px;
+}
+
+.redes-artista {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 10px;
+  align-items: center;
+  align-content: center;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.redes-artista a img {
+  width: 60px;
+  transition: transform 0.3s ease;  
+}
+
+.redes-artista a img:hover {
+  transform: scale(1.2);
 }
 
 /* Media Queries para hacer el diseño responsive */
