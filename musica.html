@@ -35,7 +35,7 @@
 </header>
 
   <!-- Demos -->
-  <div id="ex1" class="modal">
+  <div id="ex6" class="modal">
     <div class="demo">
       <div class="demo-cover">
         <img src="res/Covers/Cover1.png" alt="Cover 1">
@@ -52,6 +52,90 @@
     </div>
   </div>
 
+  <div id="ex5" class="modal">
+    <div class="demo">
+      <div class="demo-cover">
+        <img src="res/Covers/Cover2.png" alt="Cover 2">
+      </div>
+      <div class="demo-info">
+        <h2>Tour Vnzl</h2>
+        <p>Moya Jm</p>
+      </div>
+    </div>
+    <div class="demo-player">
+      <audio controls controlsList="nodownload">
+        <source src="res/Audio/Moya Jm - Tour Vzla demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </div>
+  </div>
+
+  <div id="ex4" class="modal">
+    <div class="demo">
+      <div class="demo-cover">
+        <img src="res/Covers/Cover3.png" alt="Cover 3">
+      </div>
+      <div class="demo-info">
+        <h2>Morenita</h2>
+        <p>Moya Jm</p>
+      </div>
+    </div>
+    <div class="demo-player">
+      <audio controls controlsList="nodownload">
+        <source src="res/Audio/Moya Jm - Morenita demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </div>
+  </div>
+
+  <div id="ex3" class="modal">
+    <div class="demo">
+      <div class="demo-cover">
+        <img src="res/Covers/Cover4.png" alt="Cover 4">
+      </div>
+      <div class="demo-info">
+        <h2>Yami</h2>
+        <p>Moya Jm</p>
+      </div>
+    </div>
+    <div class="demo-player">
+      <audio controls controlsList="nodownload">
+        <source src="res/Audio/Moya Jm - Yami demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </div>
+  </div>
+
+  <div id="ex2" class="modal">
+    <div class="demo">
+      <div class="demo-cover">
+        <img src="res/Covers/Cover5.png" alt="Cover 5">
+      </div>
+      <div class="demo-info">
+        <h2>A Tu Lado</h2>
+        <p>Moya Jm</p>
+      </div>
+    </div>
+    <div class="demo-player">
+      <audio controls controlsList="nodownload">
+        <source src="res/Audio/Moya Jm - A tu lado demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </div>
+  </div>
+
+  <div id="ex1" class="modal">
+    <div class="demo">
+      <div class="demo-cover">
+        <img src="res/Covers/Cover6.png" alt="Cover 6">
+      </div>
+      <div class="demo-info">
+        <h2>Fucking Love</h2>
+        <p>Moya Jm</p>
+      </div>
+    </div>
+    <div class="demo-player">
+      <audio controls controlsList="nodownload">
+        <source src="res/Audio/Moya Jm - Fucking love demo.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </div>
+  </div>
 
 
   <!-- Últimos lanzamientos -->
@@ -61,15 +145,31 @@
   <br>
   <div class="centered">
     <div class="cover-gallery">
-      <a href="#ex1" rel="modal:open"><img src="res/Covers/Cover1.png" alt="Cover 1" class="cover"></a>
-      <img src="res/Covers/Cover2.png" alt="Cover 2" class="cover">
-      <img src="res/Covers/Cover3.png" alt="Cover 3" class="cover">
-      <img src="res/Covers/Cover4.png" alt="Cover 4" class="cover">
-      <img src="res/Covers/Cover5.png" alt="Cover 5" class="cover">
-      <img src="res/Covers/Cover6.png" alt="Cover 6" class="cover">
+      <a href="#ex6" rel="modal:open"><img src="res/Covers/Cover1.png" alt="Cover 1" class="cover"></a>
+      <a href="#ex5" rel="modal:open"><img src="res/Covers/Cover2.png" alt="Cover 2" class="cover"></a>
+      <a href="#ex4" rel="modal:open"><img src="res/Covers/Cover3.png" alt="Cover 3" class="cover"></a>
+      <a href="#ex3" rel="modal:open"><img src="res/Covers/Cover4.png" alt="Cover 4" class="cover"></a>
+      <a href="#ex2" rel="modal:open"><img src="res/Covers/Cover5.png" alt="Cover 5" class="cover"></a>
+      <a href="#ex1" rel="modal:open"><img src="res/Covers/Cover6.png" alt="Cover 6" class="cover"></a>
     </div>
   </div>
   </section>
+
+
+  <script>
+    const audios = document.querySelectorAll('audio');
+  
+    audios.forEach((audio) => {
+      audio.addEventListener('play', () => {
+        audios.forEach((otherAudio) => {
+          if (otherAudio !== audio) {
+            otherAudio.pause();
+            otherAudio.currentTime = 0;
+          }
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
