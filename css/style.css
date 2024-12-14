@@ -8,6 +8,7 @@
 @font-face {
   font-family: ARFont;
   src: url('../res/Fonts/WatcherPersonalUseBold-BWexB.ttf') format('truetype');
+  font-display: swap;
 }
 
 /* Estilos comunes */
