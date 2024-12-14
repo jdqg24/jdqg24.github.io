@@ -103,8 +103,6 @@ header {
   color: rgb(0, 0, 0);
   justify-content: center;
   width: 80%;
-  transition: all 0.3s ease;
-  background: #6b4e91;
 }
 
 .demo {
