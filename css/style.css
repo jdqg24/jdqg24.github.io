@@ -29,7 +29,7 @@ body {
     "YTFI" 738,
     "YTLC" 514,
     "YTUC" 712;
-    background: url('../res/Backgrounds/studio-background.jpg');
+    background: url('../res/Backgrounds/studio-background.webp');
     background-size: cover;
     background-attachment: fixed;
 }
